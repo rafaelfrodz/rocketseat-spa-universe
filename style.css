@@ -34,11 +34,12 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+   
 
     font-family: 'Roboto';
     font-size: 1.8rem;
+
+    color: var(--text-main-color);
 }
 
 button {
@@ -69,7 +70,7 @@ body header {
 }
 
 body header img:hover {
-     filter: invert(100%); 
+    filter: blur(0.5px); 
 }
 
 body header nav {
@@ -90,25 +91,34 @@ body header nav a:hover {
     color: #99999e;
 }
 
-body main {
+body main .app-screen-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-body main .app {
+body main .app-screen-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 10.2rem;
 }
 
-body main .app h1 {
+body main .app h2 {
     color: var(--text-main-color);
-
+    
     font-size: 4.8rem;
     font-weight: 700;
+    line-height: 125%;
+}
+
+body main .app p {
+    line-height: 160%;
+    width: 64.8rem;
+    margin-top: 1.6rem;
+
 }
 
 
@@ -119,4 +129,15 @@ body main .app h1 {
 /*--------------Screen 1---------------*/
 .screen1-h1 {
     margin-top: 17.2rem;
+
+    color: var(--text-main-color);
+    
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 125%;
+}
+/*--------------Screen 1---------------*/
+.screen2-h2 {
+    margin-top: 6.3rem;
+    text-align: start;
 }
