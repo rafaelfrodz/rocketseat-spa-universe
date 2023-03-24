@@ -5,6 +5,7 @@ import navSelected from "./navSelected.js";
 const sectionHome = document.querySelector('.home')
 const sectionUniverse = document.querySelector('.universe')
 const sectionExploration = document.querySelector('.exploration')
+const body = document.querySelector('body')
 const router = new Router()
 
 router.add("/", "/pages/home.html")
@@ -17,4 +18,4 @@ window.onpopstate = () => router.hadle()
 window.route = () => router.route()
 
 
-navSelected(sectionHome, sectionUniverse, sectionExploration)
+navSelected(sectionHome, sectionUniverse, sectionExploration, body)
