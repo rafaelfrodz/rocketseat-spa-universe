@@ -98,7 +98,7 @@ body main .app-screen-1 {
     align-items: center;
 }
 
-body main .app-screen-2 {
+body main .app-screen-2-3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,8 +136,9 @@ body main .app p {
     font-weight: 700;
     line-height: 125%;
 }
-/*--------------Screen 1---------------*/
-.screen2-h2 {
+/*--------------Screen 2---------------*/
+.screen2-3-h2 {
     margin-top: 6.3rem;
-    text-align: start;
+    
 }
+/*--------------Screen 3---------------*/
