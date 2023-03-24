@@ -8,35 +8,9 @@
     font-size: 62.5%;
     
     --text-nav-color: #C4C4CC;
+    --text-main-color: #E1E1E6;
+    --text-focus-button-color: #FFFFFF;
 
-}
-
-body {
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-}
-
-body header {
-    display: flex;
-    gap: 4.4rem;
-    align-items: center;
-    justify-items: center;
-
-    margin: 4rem 7.2rem ;
-}
-
-body nav {
-    display: flex;
-    gap: 5.4rem;
-}
-
-body nav a {
-    font-size: 2.2rem;
-    font-weight: 400;
-    line-height: 2.2rem;
-    color: var(--text-nav-color);
-
-    text-decoration: none;
 }
 
 .background-image1 {
@@ -55,4 +29,94 @@ body nav a {
     background-image: url('./img/mountains-universe-3.png');
     background-repeat: no-repeat;
     background-size: 100vw;   
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+}
+
+button {
+    background-color: transparent;
+    appearance: none;
+
+    color: var(--text-focus-button-color);
+
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+
+    padding: 1.2rem 3.2rem;
+    margin-top: 3.6rem;
+
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-family: 'Roboto';
+}
+
+body header {
+    display: flex;
+    gap: 4.4rem;
+    align-items: center;
+    justify-items: center;
+
+    margin: 4rem 7.2rem ;
+}
+
+body header img:hover {
+     filter: invert(100%); 
+}
+
+body header nav {
+    display: flex;
+    gap: 5.4rem;
+}
+
+body header nav a {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: var(--text-nav-color);
+
+    text-decoration: none;
+}
+
+body header nav a:hover {
+    color: #99999e;
+}
+
+body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body main .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body main .app h1 {
+    color: var(--text-main-color);
+
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/*--------------Screen 1---------------*/
+.screen1-h1 {
+    margin-top: 17.2rem;
 }
