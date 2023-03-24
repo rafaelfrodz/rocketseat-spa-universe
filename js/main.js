@@ -1,5 +1,10 @@
 import { Router } from "./router.js";
+import navSelected from "./navSelected.js";
 
+
+const sectionHome = document.querySelector('.home')
+const sectionUniverse = document.querySelector('.universe')
+const sectionExploration = document.querySelector('.exploration')
 const router = new Router()
 
 router.add("/", "/pages/home.html")
@@ -10,3 +15,6 @@ router.hadle()
 
 window.onpopstate = () => router.hadle()
 window.route = () => router.route()
+
+
+navSelected(sectionHome, sectionUniverse, sectionExploration)

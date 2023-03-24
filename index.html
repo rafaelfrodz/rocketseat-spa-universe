@@ -13,9 +13,9 @@
     <header>
         <img src="./img/Vector.svg" alt="" srcset="">
         <nav>
-            <a onclick="router()" href="/">Home</a>
-            <a onclick="router()" href="/universe">O universo</a>
-            <a onclick="router()" href="/exploration">Exploração</a>
+            <a class="nav-selected home" onclick="route()" href="/">Home</a>
+            <a class="universe" onclick="route()" href="/universe">O universo</a>
+            <a class="exploration" onclick="route()" href="/exploration">Exploração</a>
         </nav>
     </header>
     <main>
@@ -23,6 +23,6 @@
             <div id="app-screen"></div>
         </div>
     </main>
-    <script src="./js/main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

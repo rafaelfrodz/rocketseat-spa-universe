@@ -8,9 +8,9 @@ export class Router {
     route(event) {
         event = event || window.event
         event.preventDefault()
-
+    
         window.history.pushState({}, '', event.target.href)
-
+    
         this.hadle()
     }
 
@@ -23,5 +23,6 @@ export class Router {
         .then(html => {
             document.querySelector('#app-screen').innerHTML = html
         })
-    }
+        
+    }  
 }
